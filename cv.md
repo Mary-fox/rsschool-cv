@@ -18,6 +18,11 @@ I know a little bit about html and css.Now I'm learning JS.
 * Git, GitHub
 * VS Code
 
+### Course
+* Web developer 2021 – from scratch to the result. 2021
+* Layout designer 2021 – HTML, CSS, Bootstrap, JavaScript. 2021
+* Hexlet: Introduction to Programming (JavaScript ES6). 2021g
+
 ### Example code
 ```javascript
 function powersOfTwo(n){
@@ -31,10 +36,5 @@ function powersOfTwo(n){
 ### Languages
 * Russian - Native
 * English - A1 Elementary
-
-### Course
-* Web developer 2021 – from scratch to the result. 2021
-* Layout designer 2021 – HTML, CSS, Bootstrap, JavaScript. 2021
-* Hexlet: Introduction to Programming (JavaScript ES6). 2021g
 
 > rolling-scopes-school 2022q3
