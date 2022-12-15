@@ -216,7 +216,13 @@ html {
 .footer_author {
     font-size: 13px;
 }
-
+.hamb {
+    display: none;
+  }
+  
+  .popup {
+    display: none;
+  }
 @media (max-width: 800px) {
     .about__photo img {
         max-width: 270px;
@@ -272,4 +278,92 @@ html {
     .language__list {
         padding-bottom: 30px;
     }
+    .hamb {
+        display: flex;
+        align-items: center;
+      }
+    
+      .hamb__field {
+        padding: 5px 15px;
+        cursor: pointer;
+      }
+    
+      .bar {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 4px auto;
+        background-color: black;
+        transition: 0.2s;
+      }
+    
+      .popup {
+        position: fixed;
+        top: 42px;
+        left: -100%;
+        width: 250px;
+        height: 250px;
+        background-color: #292935;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+        border-radius: 10px;
+        opacity: 0.9;
+      }
+    
+      .popup.open {
+        left: 0;
+      }
+    
+      .popup .breadcrumbs__list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 18px 0;
+        overflow: auto;
+        gap: 10px;
+      }
+    
+      .popup .menu > li {
+        width: 100%;
+      }
+    
+      .popup .menu > li > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3f3f3f;
+      }
+    
+      .popup .menu > li > a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+      }
+    
+      .hamb__field.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .hamb__field.active .bar:nth-child(1) {
+        transform: translateY(4px) rotate(45deg);
+      }
+    
+      .hamb__field.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+      .breadcrumbs__list {
+        display: none;
+      }
+      body.noscroll {
+        overflow: hidden;
+      }
+      .breadcrumbs__link a{
+        font-size: 19px;
+        color: #fff;
+      }
 }

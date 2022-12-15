@@ -16,7 +16,13 @@
         <div class="wrapper__content">
             <header class="header">
                 <nav class="breadcrumbs">
-                    <ul>
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                          <span class="bar"></span> <span class="bar"></span>
+                          <span class="bar"></span>
+                        </div>
+                      </div>
+                    <ul class="breadcrumbs__list">
                     <li class="breadcrumbs__link"><a href="#myself">About Me</a></li>
                     <li class="breadcrumbs__link"><a href="#course">Course</a></li>
                     <li class="breadcrumbs__link"><a href="#skills">Skills</a></li>
@@ -26,6 +32,7 @@
                     <li class="breadcrumbs__link"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="popup" id="popup"></div>
             </header>
             <main>
                 <div class="about__container">
@@ -151,5 +158,6 @@
             </footer>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
