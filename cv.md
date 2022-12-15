@@ -1,4 +1,4 @@
-![Фото резюме](./img/Photo.jpg)
+![Фото резюме](.assets/img/Photo.jpg)
 # Mary Timashova
 ## Junior Frontend Developer
 

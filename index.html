@@ -5,10 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1>Mary Timashova</h1>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <header class="header">
+                <nav class="breadcrumbs">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                          <span class="bar"></span> <span class="bar"></span>
+                          <span class="bar"></span>
+                        </div>
+                      </div>
+                    <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__link"><a href="#myself">About Me</a></li>
+                    <li class="breadcrumbs__link"><a href="#course">Course</a></li>
+                    <li class="breadcrumbs__link"><a href="#skills">Skills</a></li>
+                    <li class="breadcrumbs__link"><a href="#education">Education</a></li>
+                    <li class="breadcrumbs__link"><a href="#code">Code</a></li>
+                    <li class="breadcrumbs__link"><a href="#code">Language</a></li>
+                    <li class="breadcrumbs__link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="popup" id="popup"></div>
+            </header>
+            <main>
+                <div class="about__container">
+                    <div class="about__photo">
+                        <img src="./assets/img/Myphoto.jpg" alt="Mary Timashova photo">
+                    </div>
+                    <div class="about__content">
+                        <h1 class="about__title">Mary Timashova</h1>
+                        <h2 class="about__subtitle">Junior Frontend Developer</h2>
+                        <p class="about__text" id="myself">Hello! My name is Mary. I am 28 years old. I'm a humanitarion.
+                        I started learning frontend development a year ago. 
+                        I know a little bit about html and css. Now I'm learning JS and React.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="left-side">
+                        <nav class="course">
+                            <h2 class="course__title" id="course">Course and project</h2>
+                            <div class="line"></div>
+                            <ul class="course__list">
+                                <li class="course__text">Layout designer 2021 – HTML, CSS, Bootstrap, JavaScript. 2021</li>
+                                <li class="course__text">Hexlet: Introduction to Programming (JavaScript ES6). 2021</li>
+                                <li class="course__text">Web developer 2021 – from scratch to the result 2021:
+                                    <div class="course__link">
+                                        <img src="./assets/icons/Project.svg" alt="icon"><a href="https://github.com/Mary-fox/Wordpress">Wordpress project</a>
+                                   </div>
+                                </li>
+                                <li class="course__text">Innopolis university - Basics of frontend development 2022:
+                                    <div class="course__link">
+                                        <img src="./assets/icons/Project.svg" alt="icon"><a href="https://gitlab.com/Mary-fox/innopolis">My market project</a>
+                                   </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="skills">
+                            <h2 class="skills__title" id="skills">Skills</h2>
+                            <div class="line"></div>
+                            <ul class="skills__list">
+                                <li class="skills__item">HTML, CSS, BEM</li>
+                                <li class="skills__item">JavaScript</li>
+                                <li class="skills__item">React</li>
+                                <li class="skills__item">Redax</li>
+                                <li class="skills__item">Figma, Git</li>
+                            </ul>
+                        </div>
+                        <div class="education">
+                            <h2 class="education__title" id="education">Education</h2>
+                            <div class="line"></div>
+                            <ul class="education__list">
+                                <li class="education__item">2011-2016 <br>
+                                    RANEPA. Russian Presidential Academy of National Economy and Public Administration.
+                                </li>
+                                <li class="education__item">2022 <br>
+                                    Innopolis university - Basics of frontend development (HTML, CSS, JS, React, Redux).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="code" id="code">
+                            <h2 class="code__title">Example code</h2>
+                            <div class="line"></div>
+                                <div class="code__example">
+                                    <code>
+                                        function powersOfTwo(n){ <br>
+                                            let result = [];<br>
+                                            for (let i = 0; i &lt;= n; i++) {<br>
+                                            result.push (2 ** i);<br>
+                                            }<br>
+                                            return result;<br>
+                                            }
+                                    </code>
+                                </div>
+                        </div>
+                        <div class="language">
+                            <h2 class="language__title" id="language">Language</h2>
+                            <!-- <div class="line"></div> -->
+                            <ul class="language__list">
+                                <li class="language__item">Russian<p class="language__level">Native</p></li>
+                                <li class="language__item">English<p class="language__level">A1 Elementary</p></li>
+                            </ul>
+                        </div>
+                        <div class="contact" id="contact">
+                            <h2 class="contact__title">Contact</h2>
+                            <div class="contact__content">
+                                <div class="contact__icons">
+                                    <img src="./assets/icons/Email.svg" alt="email">
+                                    <img src="./assets/icons/Phone.svg" alt="phone">
+                                    <img class="contact__icon" src="./assets/icons/discord.svg" alt="discord">
+                                </div>
+                                <div class="contact__info">
+                                    <ul class="contact__list">
+                                        <li class="contact__item">Email <br>
+                                            <a href="mailto:mary-fox2008@yandex.ru"> Mary-fox2008@yandex.ru</a>
+                                        </li>
+                                        <li class="contact__item">Phone <br>
+                                            <a href="tel:79105227908">+7(910)522-79-08</a>
+                                        </li>
+                                        <li class="contact__item"> Discord <br> MaryTim#8987</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="footer__main">
+                        <a class="footer__link" href="https://github.com/Mary-fox" target="_blank">My GitHub</a>
+                        <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+                            <img class="footer__logo" src="./assets/img/rs_school_js.svg" alt="RS School">
+                        </a>
+                    </div>
+                    <div class="footer_author">
+                        <p class="footer__text"> Mary Timashova 2022</p>
+                    </div>
+                    
+                  
+                    
+                    </div>
+            </footer>
+        </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
